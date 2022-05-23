@@ -1,4 +1,4 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: worker-deployment
@@ -13,6 +13,5 @@ spec:
         component: worker
     spec:
       containers:
-        -name: worker
+        - name: worker
           image: alfredocm80/multi-worker
-          
